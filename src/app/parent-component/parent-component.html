@@ -1,4 +1,2 @@
-<div>
     <label for="name"> Name:</label>
-    <input id="name" type="text" (onChange)="nameChanged(event$)" />
-</div>
+    <input id="name" type="text" (input)="nameChanged($event)" >

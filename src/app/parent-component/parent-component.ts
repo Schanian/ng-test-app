@@ -1,4 +1,4 @@
-import { Component } from '@angulara/core';
+import { Component } from '@angular/core';
 import { Output, EventEmitter } from '@angular/core';
 
 @Component({
@@ -9,9 +9,7 @@ export class  ParentComponent{
 // name: string ="";
 @Output() OnNameChange: EventEmitter<string> = new EventEmitter<string>();
 
-    nameChanged(event){
-        // this.name=event.target.value;
+public nameChanged(event:any){
         this.OnNameChange.emit(event.target.value);
-        console.log("The value Parent ",event);
     }
 }

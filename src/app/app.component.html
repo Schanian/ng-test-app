@@ -1,2 +1,2 @@
-<parent-component (OnNameChange)="nameUpdated(event$)" ></parent-component>
-<child-component [name]=""nameUpdated(event$)"" ></child-component>
+<parent-component (OnNameChange)="OnNameChange($event)"></parent-component>
+<child-component [name]="name"></child-component>
